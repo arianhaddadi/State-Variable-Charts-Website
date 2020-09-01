@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>صفحه رسم</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type="text/css" href = "stylesheets/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/alertify.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src = "javascripts/index.js"></script>
+    </head>
+    <body onload = "choose();">
+        <div class = "css-title">
+                ELECTRICAL CIRCUITS
+        </div><br><br>
+        <div style = "display: flex;"> 
+        <div> 
+            <div id = "howMany" style = "display:flex;margin-left: 40px;"> 
+            <label for="q" id="v" style = "text-align: right;">مشخص کنید تا چند بار مرتبه زمانی ای نمودار رسم شود :</label>
+            <input id="q" style="color:rgb(4, 101, 153); border-radius: 30px;
+             width:200px; height:40px; border:3px solid gray; background-color:gray" 
+             onkeyup=" drawInterface(); " type="text" > 
+               </div>
+               <div style = "border-radius: 40px; font-size: 30px; background-color: gray; color:rgb(160, 9, 47)">
+            <ul id = "choose"></ul>
+            </div>
+            <button class="btn" onclick = "signout()"> Exit </button>
+        </div>
+        <div class = "chart" >
+                <div style="display:flex; margin-top:40px;">
+                        <div class="btn-t" style = "font-size:21px;" onclick = "btnTSelected();">
+                            Time-value
+                        </div>
+                        <div class="btn-s" style = "font-size:20px;" onClick = "btnSSelected();">
+                            State-path
+                        </div>
+                    </div>
+            <div id = "container" style="width:80%; height:400px;">
+
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

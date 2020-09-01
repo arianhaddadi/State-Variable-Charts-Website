@@ -1,0 +1,182 @@
+body {
+  background-color: rgb(78, 77, 77);
+  background-image: url("/images/1.jpg");
+  background-size: 800px;
+}
+
+#container {
+  margin-top:90px;
+  margin-left:100px;
+  
+}
+
+.btn{
+  width:400px;
+  height:69px;
+  margin-left:140px;
+  margin-top:210px;
+  color:white;
+  font-size:50px;
+  background-color:rgb(130, 20, 20)
+}
+
+
+
+#v {
+  width:480px;
+  animation:none;
+  color:lightgreen;
+  font-size: 20px;
+}
+
+.chart {
+  background-color:white;
+  width:1400px;
+  height:800px;
+  margin-left: 0px;
+  border-radius: 70px;
+  margin-right:40px;
+}
+
+label {
+  font-size:17px;
+  animation-name: change2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+.d{
+  background-color:rgb(rgb(105, 2, 2), green, blue)
+}
+.btn-s{
+  text-align:center;
+  background-color:rgb(7, 145, 209);
+  width:100px;
+  margin-left:0px;
+  height:30px;
+  padding:3px;
+  color:white;
+  /* font-size:24px; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.btn-t{
+  border:1px white solid;
+  text-align:center;
+  width:100px;
+  margin-right:0px;
+  margin-top:-1px;
+  margin-left:500px;
+  background-color:rgb(8, 240, 228);
+  height:31px;
+  padding:3px;
+  color:white;
+  /* font-size:20px; */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+button:hover {
+  background-color: rgb(4, 131, 153);
+  color:white;
+}
+
+
+.initial-inputs{
+  background-color:rgb(48, 48, 48);
+  width:800px;
+  height:500px;
+  margin-left:30%;
+  border-radius:15%;
+}
+
+input {
+  border:5px solid rgb(150, 148, 148);
+  font-size:40px;
+  /* color:rgb(2, 114, 129); */
+  color:rgb(4, 131, 153);
+  outline:0;
+  text-align: center;
+}
+
+.css-title{
+  margin-left: 32%;
+  /* width:300px; */
+  /* height: 200px; */
+  font-size: 70px;
+  animation-name: change;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+@keyframes change {
+  from { color:rgb(43, 172, 92);}
+  to { color: rgb(173, 20, 20);}
+}
+
+@keyframes change2 {
+  from { color:rgb(201, 3, 125)  }
+  to { color:rgb(4, 131, 153) }
+}
+
+@keyframes change3 {
+  from { background-color:rgb(201, 3, 125)  }
+  to { background-color:rgb(4, 131, 153) }
+}
+
+button {
+  width:120px;
+  height:54px;
+  background-color:rgb(14, 126, 111);
+  border-radius: 30px;
+  border:0;
+  margin-left:70px;
+  outline: 0;
+  font-size:30px;
+  color:lightblue;
+}
+
+
+
+
+.numbOfVariables,
+.deltaT {
+  /* margin-left:44%; */
+  background-color: rgb(150, 148, 148);
+  height:40px;
+  width:400px;
+  margin-top: 44px;
+  margin-left:10px;
+  border-radius: 20px;
+}
+
+ .A-MATRIX,
+.B-vector,
+.Initial-vector{
+  /* background-color: aqua; */
+  /* margin-left:50%;  */
+  animation-name: change2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  text-align: center;
+  font-size: 30px;
+  /* margin-left: -50%; */
+}
+
+.Matrix,
+.B,
+.X0 {
+  border:none;
+  margin-right: 2px;
+}
+
+.ajs-visible {
+  height:20px;
+  /* width:900px; */
+  text-align:center;
+  background-image: linear-gradient(to right, rgb(255, 115, 0), rgb(255, 0, 140));
+  color: white;
+  border-radius: 30px;
+  right: 20px;
+  font-size: 20px;
+}
